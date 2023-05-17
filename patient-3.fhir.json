@@ -1,0 +1,106 @@
+{
+    "resourceType": "Patient",
+    "id":21,
+    "active":true,
+    "extension":[
+        {
+            "url":"http://pukyunapu-moh.pn.go/fhir/core/StructureDefinition/ethnicity",
+            "valueCoding":{
+                "code": "04",
+                "display":"Kamba",
+                "system": "http://pukyunapu-moh.pn.go/fhir/core/CodeSystem/ethnicity"
+            }
+        }
+    ],
+    "name": [
+        {
+            "family": "Samba",
+            "given": ["Monique","Shuhay"]
+        }
+    ],
+    "gender":"unknown",
+    "birthDate": "1964-11-23",
+    "identifier": [
+        {
+            "system": "http://nationalpukyu-napu/patients",
+            "value":"NPNI-2",
+            "display":"National ID"
+        },
+        {
+            "system": "http://nationalpukyu-napupass/members",
+            "value":"NPNP-2",
+            "display": "Passport"
+        },
+        {
+            "system": "http://nationalpukyu-health/members",
+            "value":"NPHC-2",
+            "display": "Healthcare card"
+        }
+        
+    ],
+    "address": [
+        {
+            "state":"P-Pukyu",
+            "district": "P101-Llaqta",
+            "country": "PN"
+        }
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code":"M",
+                "display": "Married"
+
+            }
+        ]
+    },
+    "telecom": [
+        {
+            "system": "phone",
+            "value":"+1-7234-643-111"
+        }
+    ],
+
+    "contact": [
+        {
+            "relationship": [
+                {
+                    "coding": [
+                        {
+                            "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                            "code":"N",
+                            "display": "Next of Kin"
+
+                        }
+                    ]
+                }
+            ],
+            "name": {
+                "given": ["Patel", "Manday"],
+                "family": "Punky"
+            },
+            "telecom": [
+                {"system": "email",
+                "value": "patel@gmail.com"}
+            ]
+        }
+        
+    ],
+    "communication": [
+        {
+            "language": {
+                "coding": [
+                    {
+                        "system": "https://terminology.hl7.org/3.1.0/CodeSystem-v3-ietf3066.html",
+                        "code": "bn",
+                        "display": "Bengali"
+                    }
+                ]
+            },
+            "preferred": true 
+
+        }
+    ]
+
+}

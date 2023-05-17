@@ -1,0 +1,47 @@
+{
+    "resourceType": "Immunization",
+    "id": "example",
+    "status": "completed",
+    "vaccineCode": {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/sid/cvx",
+          "code": "207"
+        }
+      ]
+    },
+    "patient": {
+      "reference": "Patient/example"
+    },
+    "encounter": {
+      "reference": "Encounter/example"
+    },
+    "occurrenceDateTime": "2023-05-17T10:30:00-04:00",
+    "primarySource": true,
+    "location": {
+      "reference": "Location/example"
+    },
+    "lotNumber": "000123",
+    "expirationDate": "2023-06-30",
+    "site": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "368209003"
+        }
+      ]
+    },
+    "route": {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "44233006"
+        }
+      ]
+    },
+    "doseQuantity": {
+      "value": 1,
+      "unit": "dose"
+    }
+  }
+  

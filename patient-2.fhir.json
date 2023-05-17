@@ -1,0 +1,112 @@
+    {
+        "resourceType": "Patient",
+        "id":13,
+        "active":true,
+        "extension":[
+
+            {
+                "url":"http://pukyunapu-moh.pn.go/fhir/core/StructureDefinition/ethnicity",
+                "valueCoding":{
+                    "code": "22755",
+                    "display":"Sindhi (ethnicity)",
+                    "system": "https://nhdd.health.go.ke/"
+                }
+            }
+        ],
+        "name": [
+            {
+                "family": "Chunney",
+                "given": ["Alex","Nuhay"]
+            }
+        ],
+        "gender":"unknown",
+        "birthDate": "1966-10-24",
+        "identifier": [
+            {
+                "system": "http://nationalpukyu-napu/patients",
+                "value":"NPNI-1",
+                "display":"National ID"
+            },
+            {
+                "system": "http://nationalpukyu-napupass/members",
+                "value":"NPNP-1",
+                "display": "Passport"
+            },
+            {
+                "system": "http://nationalpukyu-health/members",
+                "value":"NPHC-1",
+                "display": "Healthcare card"
+            }
+            
+        ],
+        "address": [
+            {
+                "line": [
+                    "Juanxi",
+                    "P.O Box 92321-00344"
+            ],
+                "state":"N-Napu",
+                "country": "PN",
+                "district": "N101-Wilna"
+                
+            }
+        ],
+        "maritalStatus": {
+            "coding": [
+                {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                    "code":"M",
+                    "display": "Married"
+
+                }
+            ]
+        },
+        "telecom": [
+            {
+                "system": "phone",
+                "value":"+1-7232-000-111"
+            }
+        ],
+    
+        "contact": [
+            {
+                "relationship": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                                "code":"N",
+                                "display": "Next of Kin"
+
+                            }
+                        ]
+                    }
+                ],
+                "name": {
+                    "given": ["Sunnay", "Sundra"],
+                    "family": "Pichai"
+                },
+                "telecom": [
+                    {"system": "email",
+                    "value": "sunnay@gmail.com"}
+                ]
+            }
+            
+        ],
+        "communication": [
+            {
+                "language": {
+                    "coding": [
+                        {
+                            "system": "https://terminology.hl7.org/3.1.0/CodeSystem-v3-ietf3066.html",
+                            "code": "bn",
+                            "display": "Bengali"
+                        }
+                    ]
+                },
+                "preferred": true 
+
+            }
+        ]
+
+    }
